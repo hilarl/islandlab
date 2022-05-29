@@ -1,0 +1,402 @@
+.challenge-number {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.cc-window {
+    padding: 12px 0;
+    text-align: center;
+}
+
+#ocean {
+    margin-top: 40px;
+    background: url('../img/bg.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 420px;
+    position: relative;
+}
+
+#ecounicef {
+    height: 60px;
+    position: absolute;
+    bottom: 42px;
+    left: 42px;
+}
+
+#nav a {
+    display: inline-block;
+    padding-bottom: 12px;
+}
+
+.resource h5 {
+    margin-top: 24px;
+    margin-bottom: 42px;
+}
+
+.challenges {
+    font-size: 18px;
+}
+
+.challenges p {
+    margin-bottom: 42px;
+}
+
+.journey {
+    font-size: 28px;
+    padding-bottom: 24px;
+}
+
+.business-support-item {
+    font-size: 20px;
+    margin-bottom: 42px;
+}
+
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+    #logo {
+        margin-top: 60px;
+        height: 90px;
+      }
+    #typeface {
+        margin-top: 12px;
+        margin-bottom: 52px;
+        font-size: 62px;
+    }
+    .section {
+        margin-top: 60px;
+    }
+    .sub-section {
+        margin-top: 40px;
+    }
+    .icon {
+        margin-bottom: 24px;
+    }
+    .focus {
+        margin-bottom: 32px;
+    }
+    .focusm {
+        margin-bottom: 12px;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    .highlight {
+        margin-bottom: 42px;
+    }
+    .space {
+        margin-bottom: 32px;
+    }
+    .team-heading {
+        margin-bottom: 42px;
+    }
+    .journey {
+        font-size: 20px;
+    }
+}
+
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) {
+        #logo {
+            margin-top: 60px;
+            height: 90px;
+          }
+        #typeface {
+            margin-top: 12px;
+            margin-bottom: 52px;
+            font-size: 62px;
+        }
+        .section {
+            margin-top: 60px;
+        }
+        .sub-section {
+            margin-top: 40px;
+        }
+        .icon {
+            margin-bottom: 24px;
+        }
+        .focus {
+            margin-bottom: 32px;
+        }
+        .focusm {
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-size: 26px;
+        }
+        .highlight {
+            margin-bottom: 42px;
+        }
+        .space {
+            margin-bottom: 32px;
+        }
+        .team-heading {
+            margin-bottom: 42px;
+        }
+    }
+
+@media only screen 
+and (device-width: 428px) 
+and (device-height: 926px) 
+and (-webkit-device-pixel-ratio: 3) {
+    #logo {
+        margin-top: 60px;
+        height: 90px;
+      }
+    #typeface {
+        margin-top: 12px;
+        margin-bottom: 52px;
+        font-size: 62px;
+    }
+    .section {
+        margin-top: 60px;
+    }
+    .sub-section {
+        margin-top: 40px;
+    }
+    .icon {
+        margin-bottom: 24px;
+    }
+    .focus {
+        margin-bottom: 32px;
+    }
+    .focusm {
+        margin-bottom: 12px;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    .highlight {
+        margin-bottom: 42px;
+    }
+    .space {
+        margin-bottom: 32px;
+    }
+    .team-heading {
+        margin-bottom: 42px;
+    }
+}
+
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 2) {
+        #logo {
+            margin-top: 60px;
+            height: 90px;
+          }
+        #typeface {
+            margin-top: 12px;
+            margin-bottom: 52px;
+            font-size: 62px;
+        }
+        .section {
+            margin-top: 60px;
+        }
+        .sub-section {
+            margin-top: 40px;
+        }
+        .icon {
+            margin-bottom: 24px;
+        }
+        .focus {
+            margin-bottom: 32px;
+        }
+        .focusm {
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-size: 26px;
+        }
+        .highlight {
+            margin-bottom: 42px;
+        }
+        .space {
+            margin-bottom: 32px;
+        }
+        .team-heading {
+            margin-bottom: 42px;
+        }
+    }
+
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) {
+        #logo {
+            margin-top: 60px;
+            height: 90px;
+          }
+        #typeface {
+            margin-top: 12px;
+            margin-bottom: 52px;
+            font-size: 62px;
+        }
+        .section {
+            margin-top: 60px;
+        }
+        .sub-section {
+            margin-top: 40px;
+        }
+        .icon {
+            margin-bottom: 24px;
+        }
+        .focus {
+            margin-bottom: 32px;
+        }
+        .focusm {
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-size: 26px;
+        }
+        .highlight {
+            margin-bottom: 42px;
+        }
+        .space {
+            margin-bottom: 32px;
+        }
+        .team-heading {
+            margin-bottom: 42px;
+        }
+    }
+
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 3) {
+    
+        #logo {
+            margin-top: 60px;
+            height: 90px;
+          }
+        #typeface {
+            margin-top: 12px;
+            margin-bottom: 52px;
+            font-size: 62px;
+        }
+        .section {
+            margin-top: 60px;
+        }
+        .sub-section {
+            margin-top: 40px;
+        }
+        .icon {
+            margin-bottom: 24px;
+        }
+        .focus {
+            margin-bottom: 32px;
+        }
+        .focusm {
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-size: 26px;
+        }
+        .highlight {
+            margin-bottom: 42px;
+        }
+        .space {
+            margin-bottom: 32px;
+        }
+        .team-heading {
+            margin-bottom: 42px;
+        }
+}
+
+@media (min-width: 476px) {
+    #logo {
+        margin-top: 60px;
+        height: 90px;
+      }
+    #typeface {
+        margin-top: 12px;
+        margin-bottom: 52px;
+        font-size: 62px;
+    }
+    .section {
+        margin-top: 60px;
+    }
+    .sub-section {
+        margin-top: 40px;
+    }
+    .icon {
+        margin-bottom: 24px;
+    }
+    .focus {
+        margin-bottom: 32px;
+    }
+    .focusm {
+        margin-bottom: 12px;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    .highlight {
+        margin-bottom: 42px;
+    }
+    .space {
+        margin-bottom: 32px;
+    }
+    .team-heading {
+        margin-bottom: 42px;
+    }
+}
+
+@media (min-width: 768px) {
+    #logo {
+        margin-top: 60px;
+        height: 90px;
+      }
+    #typeface {
+        margin-top: 12px;
+        margin-bottom: 52px;
+        font-size: 62px;
+    }
+    .section {
+        margin-top: 60px;
+    }
+    .sub-section {
+        margin-top: 40px;
+    }
+    .icon {
+        margin-bottom: 24px;
+    }
+    .focus {
+        margin-bottom: 32px;
+    }
+    .focusm {
+        margin-bottom: 12px;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    .highlight {
+        margin-bottom: 42px;
+    }
+    .space {
+        margin-bottom: 32px;
+    }
+}
+
+@media (min-width: 992px) {
+    #typeface {
+        font-size: 92px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #typeface {
+        font-size: 102px;
+    }
+}
+
+@media (min-width: 1400px) {
+    #typeface {
+        font-size: 102px;
+    }
+}
