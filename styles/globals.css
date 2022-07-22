@@ -1,26 +1,89 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: "Recoleta";
+  src: url(../public/fonts/recoleta-semibold.woff2) format("woff2");
 }
-
+@font-face {
+  font-family: "Graphik";
+  src: url(../public/fonts/Graphik-Regular.woff2) format("woff2");
+}
 * {
-  box-sizing: border-box;
+  @apply duration-150;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+body {
+  font-family: "Graphik", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  @apply bg-background;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Recoleta";
+}
+
+h1 {
+  @apply text-4xl md:text-6xl;
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.3px);
+  -webkit-backdrop-filter: blur(7.3px);
+}
+
+.sticky-header h2 {
+  @apply text-4xl mb-3;
+}
+
+section {
+  @apply py-6 px-5 md:grid md:grid-cols-3 gap-10 max-w-6xl mx-auto my-6;
+}
+
+section .content {
+  @apply md:col-span-2;
+}
+section ul {
+  @apply flex flex-col gap-3;
+}
+
+.sticky-header {
+  @apply md:sticky md:top-10 mb-4;
+}
+ul.liststyled li::marker {
+  position: absolute;
+  top: 0;
+  left: -2rem;
+  content: "-  ";
+}
+
+#challenges li {
+  @apply relative;
+}
+#challenges li::before {
+  font-family: "Recoletta";
+  content: counter(list-item) ".";
+  @apply text-2xl text-blue-900 relative -left-2 ml-2;
+}
+
+#application li {
+  @apply relative mt-8;
+}
+#application li::before {
+  font-family: "Recoletta";
+  content: counter(list-item);
+  @apply text-2xl text-yellow-300 absolute -top-8 -left-1;
+}
+
+button {
+  font-family: "Recoleta";
+  @apply bg-blue-900 text-white px-5 py-2 rounded-lg hover:bg-blue-600;
 }
