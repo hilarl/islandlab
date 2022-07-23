@@ -73,7 +73,7 @@ export default function Unicef({ challenge }) {
         <div className="sticky-header">
           <h2>Program mentors</h2>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 place-items-center content gap-x-4 gap-y-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 content gap-x-4 gap-y-6">
           {challenge?.mentors &&
             challenge?.mentors.map((mentor, i) => (
               <div key={i} className="flex flex-col">
