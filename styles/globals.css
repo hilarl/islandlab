@@ -83,7 +83,7 @@ ul.liststyled li::marker {
   @apply text-2xl text-yellow-300 absolute -top-8 -left-1;
 }
 
-button {
+.apply-button {
   font-family: "Recoleta";
   @apply bg-blue-900 text-white px-5 py-2 rounded-lg hover:bg-blue-600;
 }

@@ -1,5 +1,6 @@
 import { urlFor, fetchChallenge } from "../helpers";
 import { useState } from "react";
+import ApplyButton from "../components/ApplyButton";
 
 export default function Unicef({ challenge }) {
   return (
@@ -8,18 +9,18 @@ export default function Unicef({ challenge }) {
         <div className="bg-yellow-300 rounded-2xl my-8 flex flex-col min-h-[600px] mx-2 sm:mx-5 justify-center items-center gap-8">
           <div className="flex flex-col justify-center items-center text-center gap-3 max-w-2xl">
             <h1>Climate innovation youth challenge</h1>
-            <h5>Application Deadline: 1 August 2022</h5>
-            <button>Apply now</button>
-          </div>
-          <div>
-            <h5>Implementing partners</h5>
+            <h5>Application Deadline: 3 August 2022</h5>
+            <ApplyButton />
+
+            <h5 className="mt-6">Implementing partners</h5>
             <div className="flex gap-3 items-center">
-              {challenge?.partners &&
+            <img className="h-6 sm:h-10" src={urlFor(challenge?.partners[0])} alt="Partners" />
+              {/* {challenge?.partners &&
                 challenge?.partners.map((partner, _id) => (
                   <div key={_id}>
                     <img src={urlFor(partner)} alt={partner} />
                   </div>
-                ))}
+                ))} */}
             </div>
           </div>
         </div>
@@ -113,31 +114,29 @@ export default function Unicef({ challenge }) {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-6 content">
           {challenge?.tools_resources &&
             challenge?.tools_resources.map((tool, i) => (
-            <div key={i}>
-              <div className="w-full rounded-lg bg-blue-500 overflow-hidden">
-                <img src={urlFor(tool?.image)} alt={tool?.name} />
+              <div key={i}>
+                <div className="w-full rounded-lg bg-blue-500 overflow-hidden">
+                  <img src={urlFor(tool?.image)} alt={tool?.name} />
+                </div>
+                <h3 className="md:text-xl">{tool?.name}</h3>
               </div>
-              <h3 className="md:text-xl">{tool?.name}</h3>
-            </div>
-          ))}
+            ))}
         </div>
       </section>
       <section id="application">
         <div className="sticky-header">
           <h2>Application</h2>
-          <p>
+          <p className="mb-3">
             Submit your innovative climate solution to one of the following 8
             challenges
           </p>
-          <button className="mt-3">Apply now</button>
+          <ApplyButton />
         </div>
         <ul className="content bg-blue-900 px-9 py-5 rounded-xl font-medium text-white">
           {challenge?.application &&
             challenge?.application.map((application, i) => (
-            <li key={i}>
-              {application}
-            </li>
-          ))}
+              <li key={i}>{application}</li>
+            ))}
         </ul>
       </section>
       <section>
@@ -147,12 +146,12 @@ export default function Unicef({ challenge }) {
         <div className="content flex flex-col gap-4">
           {challenge?.faqs &&
             challenge?.faqs.map((faq, i) => (
-            <Accordion
-              key={i}
-              question={faq?.question}
-              answer={faq?.answer}
-            />
-          ))}
+              <Accordion
+                key={i}
+                question={faq?.question}
+                answer={faq?.answer}
+              />
+            ))}
         </div>
       </section>
     </>
@@ -175,6 +174,8 @@ const Accordion = ({ question, answer }) => {
     </div>
   );
 };
+
+
 
 export async function getStaticProps() {
   const challenge = await fetchChallenge();

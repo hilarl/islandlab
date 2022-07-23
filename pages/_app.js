@@ -44,11 +44,11 @@ function MyApp({ Component, pageProps }) {
 
         <title>The Island Lab</title>
       </Head>
-      <body>
+      <main>
         <Navbar />
         <Component {...pageProps} />
         <Footer />
-      </body>
+      </main>
 
       {/* <Script
         strategy="beforeInteractive"
