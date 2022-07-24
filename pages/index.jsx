@@ -17,7 +17,7 @@ export default function Unicef({ challenge }) {
       <div className="items-center partners-div">
       <h5 className="mt-10">Implementing partners</h5>
       <div className="mb-12 mt-6">
-        <img className="h-9 sm:h-12 logos" src={urlFor(challenge?.partners[0])} alt="Partners" />
+        <img className="h-7 sm:h-12 logos" src={urlFor(challenge?.partners[0])} alt="Partners" />
           {/* {challenge?.partners &&
             challenge?.partners.map((partner, _id) => (
               <div key={_id}>
