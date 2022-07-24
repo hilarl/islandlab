@@ -41,7 +41,7 @@ export default function Unicef({ challenge }) {
               evaluates and recognizes problems as opportunities for designing a
               novel solution.
             </p>
-            <div className="bg-white px-5 py-3 md:px-7 text-gray-900 mt-3 rounded-lg">
+            <div className="bg-white px-5 py-3 md:px-7 text-gray-900 mt-10 p-10 rounded-lg">
               <h6 className="uppercase text-blue-900 font-semibold text-sm mb-4">
                 Our program gives you access to:
               </h6>
