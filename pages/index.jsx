@@ -7,7 +7,7 @@ export default function Unicef({ challenge }) {
     <>
       <header>
         <div className="yellow rounded-2xl my-8 flex flex-col min-h-[600px] mx-2 sm:mx-5 justify-center items-center gap-8">
-          <div className="flex flex-col justify-center items-center text-center gap-3 max-w-2xl p-10">
+          <div className="flex flex-col justify-center items-center text-center gap-3 max-w-2xl p-6">
             <h1 className="mb-4 text-white">Climate innovation youth challenge</h1>
             <h5 className="mb-4">Application Deadline: 3 August 2022</h5>
             <ApplyButton />
