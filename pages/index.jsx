@@ -33,9 +33,6 @@ export default function Unicef({ challenge }) {
             will include a set of protocols for engaging young people,
             technologists, private sector, and civil society in problem-solving.
           </p>
-          <a className="text-yellow-300 mt-2" href="">
-            Press release
-          </a>
           <div className="mt-5">
             <p>
               The journey from Innovation to entrepreneurship requires support
