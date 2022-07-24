@@ -6,26 +6,27 @@ export default function Unicef({ challenge }) {
   return (
     <>
       <header>
-        <div className="bg-yellow-300 rounded-2xl my-8 flex flex-col min-h-[600px] mx-2 sm:mx-5 justify-center items-center gap-8">
-          <div className="flex flex-col justify-center items-center text-center gap-3 max-w-2xl">
-            <h1>Climate innovation youth challenge</h1>
-            <h5>Application Deadline: 3 August 2022</h5>
+        <div className="yellow rounded-2xl my-8 flex flex-col min-h-[600px] mx-2 sm:mx-5 justify-center items-center gap-8">
+          <div className="flex flex-col justify-center items-center text-center gap-3 max-w-2xl p-10">
+            <h1 className="mb-4 text-white">Climate innovation youth challenge</h1>
+            <h5 className="mb-4">Application Deadline: 3 August 2022</h5>
             <ApplyButton />
-
-            <h5 className="mt-6">Implementing partners</h5>
-            <div className="flex gap-3 items-center">
-            <img className="h-6 sm:h-10" src={urlFor(challenge?.partners[0])} alt="Partners" />
-              {/* {challenge?.partners &&
-                challenge?.partners.map((partner, _id) => (
-                  <div key={_id}>
-                    <img src={urlFor(partner)} alt={partner} />
-                  </div>
-                ))} */}
-            </div>
           </div>
         </div>
       </header>
-      <div className="bg-blue-900 py-3 text-white">
+      <div className="items-center partners-div">
+      <h5 className="mt-10">Implementing partners</h5>
+      <div className="mb-12 mt-6">
+        <img className="h-9 sm:h-12 logos" src={urlFor(challenge?.partners[0])} alt="Partners" />
+          {/* {challenge?.partners &&
+            challenge?.partners.map((partner, _id) => (
+              <div key={_id}>
+                <img src={urlFor(partner)} alt={partner} />
+              </div>
+            ))} */}
+      </div>
+      </div>
+      <div className="bg-blue-700 py-3 text-white">
         <section className="flex flex-col justify-center gap-0 max-w-2xl">
           <p>
             The Eco Org and UNICEF have partnered to launch an initiative for
@@ -42,10 +43,10 @@ export default function Unicef({ challenge }) {
               novel solution.
             </p>
             <div className="bg-white px-5 py-3 md:px-7 text-gray-900 mt-10 p-10 rounded-lg">
-              <h6 className="uppercase text-blue-900 font-semibold text-sm mb-4">
+              <h6 className="uppercase blue-t font-semibold text-sm mb-6 mt-6 ml-2">
                 Our program gives you access to:
               </h6>
-              <ul className="liststyled">
+              <ul className="liststyled pl-5 pb-5">
                 <li>
                   Mentorship from industry veterans and experts across creative
                   and technical fields.
@@ -74,7 +75,7 @@ export default function Unicef({ challenge }) {
           {challenge?.mentors &&
             challenge?.mentors.map((mentor, i) => (
               <div key={i} className="flex flex-col">
-                <div className="w-20 h-20 rounded-full bg-blue-500 mb-2 overflow-hidden">
+                <div className="w-20 h-20 rounded-full blue-bg mb-2 overflow-hidden">
                   <img src={urlFor(mentor?.thumbnail)} alt="" />
                 </div>
                 <h3>{mentor?.name}</h3>
@@ -112,7 +113,7 @@ export default function Unicef({ challenge }) {
           {challenge?.tools_resources &&
             challenge?.tools_resources.map((tool, i) => (
               <div key={i}>
-                <div className="w-full rounded-lg bg-blue-500 overflow-hidden">
+                <div className="w-full rounded-lg bg-blue-700 overflow-hidden">
                   <img src={urlFor(tool?.image)} alt={tool?.name} />
                 </div>
                 <h3 className="md:text-xl">{tool?.name}</h3>
@@ -129,7 +130,7 @@ export default function Unicef({ challenge }) {
           </p>
           <ApplyButton />
         </div>
-        <ul className="content bg-blue-900 px-9 py-5 rounded-xl font-medium text-white">
+        <ul className="content bg-blue-700 px-9 py-5 rounded-xl font-medium text-white">
           {challenge?.application &&
             challenge?.application.map((application, i) => (
               <li key={i}>{application}</li>

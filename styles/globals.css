@@ -18,7 +18,6 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  @apply bg-background;
 }
 
 h1,
@@ -30,7 +29,12 @@ h5 {
 }
 
 h1 {
-  @apply text-4xl md:text-6xl;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h1 {
+  @apply text-3xl md:text-5xl;
 }
 
 .glassmorphism {
@@ -85,5 +89,25 @@ ul.liststyled li::marker {
 
 .apply-button {
   font-family: 'Montserrat', sans-serif;
-  @apply bg-blue-900 text-white px-5 py-2 rounded-lg hover:bg-blue-600;
+  @apply bg-blue-700 text-white px-5 py-2 rounded-lg hover:bg-blue-600;
+}
+
+.yellow {
+  background: #FFB000;
+}
+
+.blue-bg {
+  background: #1342D8;
+}
+
+.blue-t {
+  color: #1342D8;
+}
+
+.partners-div {
+  text-align: center;
+}
+
+.logos {
+  margin: auto;
 }
