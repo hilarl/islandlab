@@ -121,14 +121,14 @@ export default function Unicef({ challenge }) {
             ))}
         </div>
       </section>
-      <section id="application">
-        <div className="sticky-header">
+      <section id="application" className="mb-6">
+        <div className="sticky-header pb-12">
           <h2>Application</h2>
-          <p className="mb-3">
+          <p className="mb-6">
             Submit your innovative climate solution to one of the following 8
             challenges
           </p>
-          <ApplyButton />
+          <ApplyButton className="mt-6" />
         </div>
         <ul className="content bg-blue-700 px-9 py-5 rounded-xl font-medium text-white">
           {challenge?.application &&
